@@ -1,0 +1,45 @@
+[2024-07-14 23:49:24,931][train.py][line:412][INFO] Using config:
+[2024-07-14 23:49:24,931][train.py][line:413][INFO] {'CONFIG_NAME': 'bird', 'DATASET_NAME': 'birds', 'DATA_DIR': 'data/CUB_200_2011', 'SAVE_IMAGE_DIR': 'training_results/birds_image', 'SAVE_CKPT_DIR': 'training_results/birds_model', 'SAVE_LOG_DIR': 'training_results/birds_log', 'FID_feats_real_path': 'data/CUB_200_2011/fid/test/inception_all.pkl', 'Attributes_A_path': 'data/CUB_200_2011/attributes_A.pickle', 'PAIR_NAME': 'image_attributes_pair.pickle', 'WORKERS': 1, 'img_size': 256, 'NUM_CLASS': 312, 'NOISE_DIM': 100, 'RNN_TYPE': 'LSTM', 'CUDA': True, 'pretrained_path': '', 'seed': -1, 'local_rank': 0, 'TRAIN': {'NF': 32, 'BATCH_SIZE': 16, 'MAX_EPOCH': 601, 'FID': True, 'g_lr': 0.001, 'd_lr': 0.0004, 'save_per_epoch': 50, 'weight_cls': 0.5, 'weight_c': 0.1}, 'TEST': {'BATCH_SIZE': 32}, 'TEXT': {'WORDS_NUM': 18, 'EMBEDDING_DIM': 256, 'CAPTIONS_PER_IMAGE': 10, 'DAMSM_NAME': 'data/CUB_200_2011/pretrained/bird/text_encoder200.pth', 'ATTRIBUTE_CAPTION_EMBEDDING_PATH': 'data/CUB_200_2011/caption/attributes_captions_embedding.pickle'}, '--config': 'code\\cfg\\bird.yml'}
+[2024-07-14 23:49:24,931][train.py][line:420][INFO] seed now is : 21543
+[2024-07-14 23:49:29,798][train.py][line:198][INFO] ======Evaluating Metrics======
+[2024-07-14 23:50:09,030][train.py][line:203][INFO] Epoch -1: fid=309.95449
+[2024-07-14 23:50:09,030][train.py][line:204][INFO] ==============================
+[2024-07-14 23:50:10,689][train.py][line:347][INFO] [1/601][0/553] Loss_D: 1.999 Loss_Dcls: 1.386 Loss_Dc: 11.171 Loss_G: 0.072 Loss_Gcls: 0.690 Loss_Gc: 17.103
+[2024-07-14 23:50:22,753][train.py][line:347][INFO] [1/601][10/553] Loss_D: 2.148 Loss_Dcls: 1.324 Loss_Dc: 11.175 Loss_G: 0.671 Loss_Gcls: 0.661 Loss_Gc: 16.820
+[2024-07-14 23:50:34,940][train.py][line:347][INFO] [1/601][20/553] Loss_D: 2.102 Loss_Dcls: 1.283 Loss_Dc: 11.926 Loss_G: -0.471 Loss_Gcls: 0.650 Loss_Gc: 17.296
+[2024-07-14 23:50:47,044][train.py][line:347][INFO] [1/601][30/553] Loss_D: 1.880 Loss_Dcls: 1.232 Loss_Dc: 11.223 Loss_G: 0.706 Loss_Gcls: 0.612 Loss_Gc: 16.647
+[2024-07-14 23:50:59,296][train.py][line:347][INFO] [1/601][40/553] Loss_D: 1.989 Loss_Dcls: 1.188 Loss_Dc: 10.913 Loss_G: -0.224 Loss_Gcls: 0.585 Loss_Gc: 15.051
+[2024-07-14 23:51:11,412][train.py][line:347][INFO] [1/601][50/553] Loss_D: 1.973 Loss_Dcls: 1.113 Loss_Dc: 11.622 Loss_G: -0.276 Loss_Gcls: 0.547 Loss_Gc: 16.394
+[2024-07-14 23:51:23,599][train.py][line:347][INFO] [1/601][60/553] Loss_D: 1.620 Loss_Dcls: 1.071 Loss_Dc: 11.219 Loss_G: -1.242 Loss_Gcls: 0.535 Loss_Gc: 16.735
+[2024-07-14 23:51:35,564][train.py][line:347][INFO] [1/601][70/553] Loss_D: 1.450 Loss_Dcls: 1.087 Loss_Dc: 11.286 Loss_G: 3.959 Loss_Gcls: 0.553 Loss_Gc: 24.738
+[2024-07-14 23:51:47,586][train.py][line:347][INFO] [1/601][80/553] Loss_D: 1.295 Loss_Dcls: 1.038 Loss_Dc: 11.019 Loss_G: 3.268 Loss_Gcls: 0.465 Loss_Gc: 23.689
+[2024-07-14 23:51:59,587][train.py][line:347][INFO] [1/601][90/553] Loss_D: 1.460 Loss_Dcls: 0.967 Loss_Dc: 10.916 Loss_G: 4.223 Loss_Gcls: 0.456 Loss_Gc: 19.592
+[2024-07-14 23:52:11,677][train.py][line:347][INFO] [1/601][100/553] Loss_D: 1.112 Loss_Dcls: 0.930 Loss_Dc: 10.905 Loss_G: 3.722 Loss_Gcls: 0.426 Loss_Gc: 21.445
+[2024-07-14 23:52:23,752][train.py][line:347][INFO] [1/601][110/553] Loss_D: 1.036 Loss_Dcls: 0.914 Loss_Dc: 11.079 Loss_G: 10.252 Loss_Gcls: 0.399 Loss_Gc: 19.005
+[2024-07-14 23:52:35,775][train.py][line:347][INFO] [1/601][120/553] Loss_D: 1.187 Loss_Dcls: 0.992 Loss_Dc: 11.138 Loss_G: 0.739 Loss_Gcls: 0.485 Loss_Gc: 20.953
+[2024-07-14 23:52:48,028][train.py][line:347][INFO] [1/601][130/553] Loss_D: 1.177 Loss_Dcls: 0.891 Loss_Dc: 11.236 Loss_G: 1.209 Loss_Gcls: 0.406 Loss_Gc: 18.571
+[2024-07-14 23:53:00,103][train.py][line:347][INFO] [1/601][140/553] Loss_D: 1.336 Loss_Dcls: 0.905 Loss_Dc: 11.621 Loss_G: 2.016 Loss_Gcls: 0.385 Loss_Gc: 20.012
+[2024-07-14 23:53:12,229][train.py][line:347][INFO] [1/601][150/553] Loss_D: 1.064 Loss_Dcls: 0.863 Loss_Dc: 10.949 Loss_G: 3.215 Loss_Gcls: 0.395 Loss_Gc: 18.146
+[2024-07-14 23:53:24,213][train.py][line:347][INFO] [1/601][160/553] Loss_D: 1.067 Loss_Dcls: 0.785 Loss_Dc: 11.290 Loss_G: 2.182 Loss_Gcls: 0.341 Loss_Gc: 17.814
+[2024-07-14 23:53:36,384][train.py][line:347][INFO] [1/601][170/553] Loss_D: 1.309 Loss_Dcls: 0.770 Loss_Dc: 11.044 Loss_G: 25.178 Loss_Gcls: 0.337 Loss_Gc: 28.001
+[2024-07-14 23:53:48,532][train.py][line:347][INFO] [1/601][180/553] Loss_D: 1.113 Loss_Dcls: 0.736 Loss_Dc: 11.005 Loss_G: 1.909 Loss_Gcls: 0.322 Loss_Gc: 17.719
+[2024-07-14 23:54:00,546][train.py][line:347][INFO] [1/601][190/553] Loss_D: 1.929 Loss_Dcls: 0.672 Loss_Dc: 11.130 Loss_G: 0.712 Loss_Gcls: 0.334 Loss_Gc: 17.832
+[2024-07-14 23:54:13,058][train.py][line:347][INFO] [1/601][200/553] Loss_D: 1.068 Loss_Dcls: 0.669 Loss_Dc: 11.217 Loss_G: 2.704 Loss_Gcls: 0.305 Loss_Gc: 18.124
+[2024-07-14 23:54:25,424][train.py][line:347][INFO] [1/601][210/553] Loss_D: 1.049 Loss_Dcls: 0.737 Loss_Dc: 11.009 Loss_G: 2.469 Loss_Gcls: 0.321 Loss_Gc: 23.913
+[2024-07-14 23:54:37,690][train.py][line:347][INFO] [1/601][220/553] Loss_D: 1.109 Loss_Dcls: 0.665 Loss_Dc: 10.797 Loss_G: 1.898 Loss_Gcls: 0.305 Loss_Gc: 17.751
+[2024-07-14 23:54:49,876][train.py][line:347][INFO] [1/601][230/553] Loss_D: 1.072 Loss_Dcls: 0.633 Loss_Dc: 11.323 Loss_G: 9.714 Loss_Gcls: 0.278 Loss_Gc: 19.065
+[2024-07-14 23:55:02,052][train.py][line:347][INFO] [1/601][240/553] Loss_D: 1.198 Loss_Dcls: 0.676 Loss_Dc: 10.970 Loss_G: 5.249 Loss_Gcls: 0.285 Loss_Gc: 20.859
+[2024-07-14 23:55:14,314][train.py][line:347][INFO] [1/601][250/553] Loss_D: 1.064 Loss_Dcls: 0.593 Loss_Dc: 10.908 Loss_G: 3.286 Loss_Gcls: 0.265 Loss_Gc: 19.673
+[2024-07-14 23:55:26,568][train.py][line:347][INFO] [1/601][260/553] Loss_D: 1.176 Loss_Dcls: 0.603 Loss_Dc: 10.870 Loss_G: 3.436 Loss_Gcls: 0.266 Loss_Gc: 22.087
+[2024-07-14 23:55:38,785][train.py][line:347][INFO] [1/601][270/553] Loss_D: 1.017 Loss_Dcls: 0.631 Loss_Dc: 10.597 Loss_G: 5.242 Loss_Gcls: 0.289 Loss_Gc: 21.882
+[2024-07-14 23:55:51,108][train.py][line:347][INFO] [1/601][280/553] Loss_D: 1.156 Loss_Dcls: 0.680 Loss_Dc: 10.953 Loss_G: 3.807 Loss_Gcls: 0.311 Loss_Gc: 20.441
+[2024-07-14 23:56:03,242][train.py][line:347][INFO] [1/601][290/553] Loss_D: 1.064 Loss_Dcls: 0.634 Loss_Dc: 10.723 Loss_G: 3.479 Loss_Gcls: 0.287 Loss_Gc: 19.452
+[2024-07-14 23:56:15,501][train.py][line:347][INFO] [1/601][300/553] Loss_D: 1.006 Loss_Dcls: 0.620 Loss_Dc: 10.646 Loss_G: 21.226 Loss_Gcls: 0.290 Loss_Gc: 19.427
+[2024-07-14 23:56:27,738][train.py][line:347][INFO] [1/601][310/553] Loss_D: 1.093 Loss_Dcls: 0.597 Loss_Dc: 11.017 Loss_G: 3.389 Loss_Gcls: 0.279 Loss_Gc: 20.590
+[2024-07-14 23:56:40,026][train.py][line:347][INFO] [1/601][320/553] Loss_D: 1.128 Loss_Dcls: 0.610 Loss_Dc: 10.959 Loss_G: 2.458 Loss_Gcls: 0.282 Loss_Gc: 17.235
+[2024-07-14 23:56:52,328][train.py][line:347][INFO] [1/601][330/553] Loss_D: 1.022 Loss_Dcls: 0.606 Loss_Dc: 10.788 Loss_G: 10.937 Loss_Gcls: 0.278 Loss_Gc: 18.309
+[2024-07-14 23:57:04,478][train.py][line:347][INFO] [1/601][340/553] Loss_D: 1.024 Loss_Dcls: 0.558 Loss_Dc: 11.077 Loss_G: 4.091 Loss_Gcls: 0.250 Loss_Gc: 21.023
+[2024-07-14 23:57:17,290][train.py][line:347][INFO] [1/601][350/553] Loss_D: 1.087 Loss_Dcls: 0.588 Loss_Dc: 10.864 Loss_G: 27.063 Loss_Gcls: 0.268 Loss_Gc: 21.907
+[2024-07-14 23:57:29,626][train.py][line:347][INFO] [1/601][360/553] Loss_D: 0.904 Loss_Dcls: 0.543 Loss_Dc: 11.116 Loss_G: 5.621 Loss_Gcls: 0.257 Loss_Gc: 20.190
+[2024-07-14 23:57:42,118][train.py][line:347][INFO] [1/601][370/553] Loss_D: 1.132 Loss_Dcls: 0.552 Loss_Dc: 11.009 Loss_G: 5.944 Loss_Gcls: 0.253 Loss_Gc: 20.414
+[2024-07-14 23:57:54,590][train.py][line:347][INFO] [1/601][380/553] Loss_D: 1.053 Loss_Dcls: 0.575 Loss_Dc: 10.817 Loss_G: 0.372 Loss_Gcls: 0.275 Loss_Gc: 20.305
