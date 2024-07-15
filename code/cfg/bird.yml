@@ -31,7 +31,7 @@ TRAIN:
     FID: True
     g_lr: 0.001
     d_lr: 0.0004
-    save_per_epoch: 50
+    save_per_epoch: 1
     weight_cls: 0.5
     weight_c: 0.1
 
