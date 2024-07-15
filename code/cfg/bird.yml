@@ -24,8 +24,8 @@ seed: -1
 local_rank: 0
 
 TRAIN:
-    NF: 32 # default 64
-    BATCH_SIZE: 16          # A100: 64;  server 18: 16;
+    NF: 64 # default 64
+    BATCH_SIZE: 64          # A100: 64;  server 18: 16;
     MAX_EPOCH: 1 # 601
     # NET_G: '../test'
     FID: True
